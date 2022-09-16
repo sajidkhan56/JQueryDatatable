@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQuery Datatable</title>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.jqueryui.min.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/rowreorder/1.2.8/css/rowReorder.jqueryui.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    </head>
+    <body>
+        <table id="table" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sajid khan</td>
+                    <td>sajidkhan@gmail.com</td>
+                    <td>Islampur Swat Pakistan</td>
+                </tr>
+                <tr>
+                    <td>Sarbaz khan</td>
+                    <td>sarbazkhan@gmail.com</td>
+                    <td>Islampur Swat Pakistan</td>
+                </tr>
+                <tr>
+                    <td>Hasnat ahnad khan</td>
+                    <td>hasnatahmadkhan@gmail.com</td>
+                    <td>Islampur Swat Pakistan</td>
+                </tr>
+                <tr>
+                    <td>Mujahid khan</td>
+                    <td>mujahidkhan@gmail.com</td>
+                    <td>Islampur Swat Pakistan</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html> 
+<script>
+    $(document).ready(function () {
+        $('#table').DataTable();
+    });
+</script>
